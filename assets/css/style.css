@@ -4697,8 +4697,25 @@ body.search-visible {
   width: 100%;
   top: 0;
   left: 0;
-  background: var(--tg-white);
+  background: var(--tg-secondary-color);
   z-index: 9999;
+}
+.preloader-logo-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  max-width: 80vw;
+}
+.preloader-logo {
+  width: 100%;
+  height: auto;
 }
 .tg-cube-grid {
   width: 45px;
@@ -6347,8 +6364,7 @@ body.search-visible {
   color: var(--tg-yellow);
 }
 .features-item-three .features-icon::after {
-  background: #f0eddc;
-  opacity: 0.35;
+  display: none;
 }
 
 /* about */
