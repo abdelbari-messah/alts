@@ -4655,6 +4655,12 @@ body.search-visible {
   color: var(--tg-secondary-color);
   opacity: 1;
 }
+.footer-widget ul li a[aria-disabled="true"] {
+  color: var(--tg-white);
+  opacity: 1;
+  pointer-events: none;
+  cursor: default;
+}
 .footer-contact-wrap p {
   color: var(--tg-white);
   opacity: 0.7;
