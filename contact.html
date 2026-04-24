@@ -318,7 +318,8 @@
                 </div>
                 <form
                   id="contact-form"
-                  action="inc/contact.php"
+                  action="https://formspree.io/f/xpqkbzpa"
+                  method="post"
                   class="contact-form"
                   data-toggle="validator"
                 >
@@ -329,6 +330,7 @@
                         <input
                           type="text"
                           id="full-name"
+                          name="name"
                           placeholder="Entrez ici"
                           required="required"
                           data-error="Le nom est requis."
@@ -342,6 +344,7 @@
                         <input
                           type="email"
                           id="email"
+                          name="email"
                           placeholder="Entrez ici"
                           required="required"
                           data-error="L'e-mail est requis."
@@ -352,16 +355,28 @@
                   </div>
                   <select
                     class="form-select"
+                    name="subject"
+                    required
                     aria-label="Default select example"
                   >
-                    <option selected disabled>Sélectionnez un sujet **</option>
-                    <option value="1">
+                    <option selected disabled value="">
+                      Sélectionnez un sujet **
+                    </option>
+                    <option value="partenariat_distribution">
                       Demande de partenariat / distribution
                     </option>
-                    <option value="2">Demande de devis professionnel</option>
-                    <option value="3">Informations produit & conformité</option>
-                    <option value="4">Logistique & livraison</option>
-                    <option value="5">Réclamations & support</option>
+                    <option value="devis_professionnel">
+                      Demande de devis professionnel
+                    </option>
+                    <option value="informations_produit_conformite">
+                      Informations produit & conformité
+                    </option>
+                    <option value="logistique_livraison">
+                      Logistique & livraison
+                    </option>
+                    <option value="reclamations_support">
+                      Réclamations & support
+                    </option>
                   </select>
                   <div class="form-grp">
                     <label for="message">Message</label>
